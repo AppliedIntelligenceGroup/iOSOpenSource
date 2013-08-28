@@ -1,0 +1,4 @@
+Documentation set was installed to Xcode!
+
+Path: /Users/ahorovitz/Library/Developer/Shared/Documentation/DocSets/com.appliedintelligencehq.iOSOpenSource.docset
+Time: 2013-08-28 19:35:51 +0000

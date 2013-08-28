@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/OpenSourceThreadSafeNSDateFormatter.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/OpenSourceThreadSafeNSDateFormatter</TokenIdentifier>
+			<Abstract type="html">Singleton that provides for thread safe date formatting.
+Out of the box, NSDateFormatters are not thread safe; because of this, you can
+arrive at a state where a background thread will attempt to use the same formatter
+at the same time - and this will create what appears to be random crashes. Using this
+approach, you can cut down the need to instantiate a new date formatter each time you
+need one by creating on per thread.</Abstract>
+			<DeclaredIn>OpenSourceThreadSafeNSDateFormatter.h</DeclaredIn>
+            
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OpenSourceThreadSafeNSDateFormatter/dateWriter</TokenIdentifier>
+			<Abstract type="html">Returns the singleton instance of NSDateFormatter for the thread in question, if there
+is no instantiated NSDateFormatter for that thread, one is initialized and inserted into
+the thread dictionary</Abstract>
+			<DeclaredIn>OpenSourceThreadSafeNSDateFormatter.h</DeclaredIn>
+			
+			<Declaration>- (NSDateFormatter *)dateWriter</Declaration>
+			
+			<ReturnValue><Abstract type="html">Singleton instance of NSDateFormatter for the current thread.</Abstract></ReturnValue>
+			<Anchor>//api/name/dateWriter</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OpenSourceThreadSafeNSDateFormatter/dateWriterWithStyle:</TokenIdentifier>
+			<Abstract type="html">Returns the singleton instance of NSDateFormatter for the thread in question, if there
+is no instantiated NSDateFormatter for that thread, one is initialized and inserted into
+the thread dictionary.</Abstract>
+			<DeclaredIn>OpenSourceThreadSafeNSDateFormatter.h</DeclaredIn>
+			
+			<Declaration>- (NSDateFormatter *)dateWriterWithStyle:(NSDateFormatterStyle)aStyle</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>aStyle</Name>
+					<Abstract type="html">is to use a formatter style other than the default ( enUSPOSIX )</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Singleton instance of NSDateFormatter for the current thread.</Abstract></ReturnValue>
+			<Anchor>//api/name/dateWriterWithStyle:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>
